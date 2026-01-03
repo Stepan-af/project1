@@ -206,16 +206,20 @@ class SessionEngine extends ChangeNotifier {
   /// Restore active session from database (call on app startup)
   ///
   /// This handles the case where app was killed/backgrounded
-  /// during an active session
-  Future<bool> restoreSession(RouteEntity Function(String routeId) routeResolver) async {
+  /// during an active session.
+  ///
+  /// The routeResolver can be async to load routes from repository.
+  Future<bool> restoreSession(
+    Future<RouteEntity> Function(String routeId) routeResolver,
+  ) async {
     final savedSession = await _sessionRepository.getActiveSession();
 
     if (savedSession == null) {
       return false;
     }
 
-    // Resolve the route
-    final route = routeResolver(savedSession.routeId);
+    // Resolve the route (async)
+    final route = await routeResolver(savedSession.routeId);
 
     // Check if session has already expired
     final now = DateTime.now();

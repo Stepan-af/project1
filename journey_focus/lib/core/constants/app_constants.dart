@@ -26,4 +26,10 @@ class AppConstants {
 
   /// User agent for tile requests (required by OSM)
   static const String tileUserAgent = 'JourneyFocus/1.0';
+
+  /// Maximum days to check for streak calculation (prevents infinite loops)
+  static const int maxStreakDays = 365;
+
+  /// Days in a week (for statistics)
+  static const int daysInWeek = 7;
 }

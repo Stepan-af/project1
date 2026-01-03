@@ -1,6 +1,7 @@
 import '../data/repositories/session_repository.dart';
 import '../domain/entities/session_entity.dart';
 import '../core/utils/date_utils.dart';
+import '../core/constants/app_constants.dart';
 
 /// Statistics data container
 class SessionStatistics {
@@ -100,7 +101,7 @@ class StatisticsService {
   /// Get last 7 days statistics (count, total seconds)
   Future<(int, int)> _getWeekStats(DateTime now) async {
     final startOfWeek = AppDateUtils.startOfDay(
-      now.subtract(const Duration(days: 6)),
+      now.subtract(Duration(days: AppConstants.daysInWeek - 1)),
     );
     final endOfToday = AppDateUtils.endOfDay(now);
 
@@ -157,8 +158,8 @@ class StatisticsService {
     }
 
     // Check previous days
-    // Limit to 365 days to avoid infinite loops
-    for (int i = 0; i < 365; i++) {
+    // Limit to maxStreakDays to avoid infinite loops
+    for (int i = 0; i < AppConstants.maxStreakDays; i++) {
       final daySessions = await _sessionRepository.getSessionsForDate(checkDate);
       final hasSession = daySessions.any((s) => s.completed);
 
