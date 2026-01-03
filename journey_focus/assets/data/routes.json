@@ -1,0 +1,170 @@
+{
+  "routes": [
+    {
+      "id": "london-paris",
+      "title": "London → Paris",
+      "transport": "train",
+      "durationMinutes": 25,
+      "description": "A scenic journey through the Channel Tunnel, connecting two iconic European capitals.",
+      "start": { "lat": 51.5074, "lon": -0.1278 },
+      "end": { "lat": 48.8566, "lon": 2.3522 },
+      "polyline": [
+        { "lat": 51.5074, "lon": -0.1278 },
+        { "lat": 51.4500, "lon": 0.2000 },
+        { "lat": 51.3000, "lon": 0.5000 },
+        { "lat": 51.1000, "lon": 1.0000 },
+        { "lat": 50.9000, "lon": 1.4000 },
+        { "lat": 50.7500, "lon": 1.6000 },
+        { "lat": 50.5000, "lon": 1.7000 },
+        { "lat": 50.2000, "lon": 1.9000 },
+        { "lat": 49.9000, "lon": 2.0000 },
+        { "lat": 49.5000, "lon": 2.1500 },
+        { "lat": 49.1000, "lon": 2.2500 },
+        { "lat": 48.8566, "lon": 2.3522 }
+      ]
+    },
+    {
+      "id": "rome-florence",
+      "title": "Rome → Florence",
+      "transport": "train",
+      "durationMinutes": 45,
+      "description": "Travel through the heart of Tuscany on Italy's high-speed rail.",
+      "start": { "lat": 41.9028, "lon": 12.4964 },
+      "end": { "lat": 43.7696, "lon": 11.2558 },
+      "polyline": [
+        { "lat": 41.9028, "lon": 12.4964 },
+        { "lat": 42.1000, "lon": 12.4000 },
+        { "lat": 42.3500, "lon": 12.2500 },
+        { "lat": 42.5500, "lon": 12.1000 },
+        { "lat": 42.7500, "lon": 11.9500 },
+        { "lat": 42.9500, "lon": 11.8000 },
+        { "lat": 43.1500, "lon": 11.6500 },
+        { "lat": 43.3500, "lon": 11.5000 },
+        { "lat": 43.5500, "lon": 11.3500 },
+        { "lat": 43.7696, "lon": 11.2558 }
+      ]
+    },
+    {
+      "id": "la-sanfrancisco",
+      "title": "Los Angeles → San Francisco",
+      "transport": "car",
+      "durationMinutes": 60,
+      "description": "Drive along the stunning Pacific Coast Highway.",
+      "start": { "lat": 34.0522, "lon": -118.2437 },
+      "end": { "lat": 37.7749, "lon": -122.4194 },
+      "polyline": [
+        { "lat": 34.0522, "lon": -118.2437 },
+        { "lat": 34.4000, "lon": -119.0000 },
+        { "lat": 34.7000, "lon": -119.8000 },
+        { "lat": 35.0000, "lon": -120.4000 },
+        { "lat": 35.4000, "lon": -120.8500 },
+        { "lat": 35.8000, "lon": -121.2000 },
+        { "lat": 36.2000, "lon": -121.5000 },
+        { "lat": 36.6000, "lon": -121.8000 },
+        { "lat": 37.0000, "lon": -122.0000 },
+        { "lat": 37.4000, "lon": -122.2000 },
+        { "lat": 37.7749, "lon": -122.4194 }
+      ]
+    },
+    {
+      "id": "tokyo-kyoto",
+      "title": "Tokyo → Kyoto",
+      "transport": "train",
+      "durationMinutes": 30,
+      "description": "Experience Japan's legendary Shinkansen bullet train.",
+      "start": { "lat": 35.6762, "lon": 139.6503 },
+      "end": { "lat": 35.0116, "lon": 135.7681 },
+      "polyline": [
+        { "lat": 35.6762, "lon": 139.6503 },
+        { "lat": 35.5500, "lon": 139.2000 },
+        { "lat": 35.4000, "lon": 138.7000 },
+        { "lat": 35.3000, "lon": 138.2000 },
+        { "lat": 35.2000, "lon": 137.7000 },
+        { "lat": 35.1500, "lon": 137.2000 },
+        { "lat": 35.1000, "lon": 136.7000 },
+        { "lat": 35.0500, "lon": 136.2000 },
+        { "lat": 35.0116, "lon": 135.7681 }
+      ]
+    },
+    {
+      "id": "stockholm-helsinki",
+      "title": "Stockholm → Helsinki",
+      "transport": "ferry",
+      "durationMinutes": 90,
+      "description": "Cruise across the Baltic Sea between two Nordic capitals.",
+      "start": { "lat": 59.3293, "lon": 18.0686 },
+      "end": { "lat": 60.1699, "lon": 24.9384 },
+      "polyline": [
+        { "lat": 59.3293, "lon": 18.0686 },
+        { "lat": 59.4000, "lon": 18.8000 },
+        { "lat": 59.5000, "lon": 19.6000 },
+        { "lat": 59.6000, "lon": 20.4000 },
+        { "lat": 59.7000, "lon": 21.2000 },
+        { "lat": 59.8000, "lon": 22.0000 },
+        { "lat": 59.9000, "lon": 22.8000 },
+        { "lat": 60.0000, "lon": 23.6000 },
+        { "lat": 60.1000, "lon": 24.4000 },
+        { "lat": 60.1699, "lon": 24.9384 }
+      ]
+    },
+    {
+      "id": "dover-calais",
+      "title": "Dover → Calais",
+      "transport": "ferry",
+      "durationMinutes": 15,
+      "description": "A short crossing of the English Channel.",
+      "start": { "lat": 51.1279, "lon": 1.3134 },
+      "end": { "lat": 50.9513, "lon": 1.8587 },
+      "polyline": [
+        { "lat": 51.1279, "lon": 1.3134 },
+        { "lat": 51.1000, "lon": 1.4500 },
+        { "lat": 51.0500, "lon": 1.5500 },
+        { "lat": 51.0000, "lon": 1.6500 },
+        { "lat": 50.9700, "lon": 1.7500 },
+        { "lat": 50.9513, "lon": 1.8587 }
+      ]
+    },
+    {
+      "id": "munich-vienna",
+      "title": "Munich → Vienna",
+      "transport": "car",
+      "durationMinutes": 50,
+      "description": "Drive through the picturesque Alpine foothills.",
+      "start": { "lat": 48.1351, "lon": 11.5820 },
+      "end": { "lat": 48.2082, "lon": 16.3738 },
+      "polyline": [
+        { "lat": 48.1351, "lon": 11.5820 },
+        { "lat": 48.1000, "lon": 12.1000 },
+        { "lat": 48.0500, "lon": 12.6000 },
+        { "lat": 48.0000, "lon": 13.1000 },
+        { "lat": 48.0000, "lon": 13.6000 },
+        { "lat": 48.0500, "lon": 14.1000 },
+        { "lat": 48.1000, "lon": 14.6000 },
+        { "lat": 48.1500, "lon": 15.2000 },
+        { "lat": 48.1800, "lon": 15.8000 },
+        { "lat": 48.2082, "lon": 16.3738 }
+      ]
+    },
+    {
+      "id": "barcelona-madrid",
+      "title": "Barcelona → Madrid",
+      "transport": "train",
+      "durationMinutes": 35,
+      "description": "Spain's AVE high-speed train connects the Mediterranean coast to the capital.",
+      "start": { "lat": 41.3851, "lon": 2.1734 },
+      "end": { "lat": 40.4168, "lon": -3.7038 },
+      "polyline": [
+        { "lat": 41.3851, "lon": 2.1734 },
+        { "lat": 41.3000, "lon": 1.5000 },
+        { "lat": 41.2000, "lon": 0.8000 },
+        { "lat": 41.1000, "lon": 0.1000 },
+        { "lat": 41.0000, "lon": -0.6000 },
+        { "lat": 40.9000, "lon": -1.3000 },
+        { "lat": 40.8000, "lon": -2.0000 },
+        { "lat": 40.6500, "lon": -2.7000 },
+        { "lat": 40.5000, "lon": -3.2000 },
+        { "lat": 40.4168, "lon": -3.7038 }
+      ]
+    }
+  ]
+}
